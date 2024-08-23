@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title> DeVSoc Application </title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <section id="navigation-links">
+          <div class="page-links"><a href="#title">Main Page</a></div>
+          <div class="page-links"><a href="#harmony-dictionary-link">Harmony</a></div>
+          <div class="page-links"><a href="#about-me-link">About Me</a></div>
+          <div class="page-links"><a href="#favorite-pieces-link">Piano Pieces</a></div>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+      <section id="title">
+        <img id="title-picture" src="./other-pics/title.png">
+      </section>
+
+      <div class="padding-for-nav-links" id="harmony-dictionary-link"></div>
+      <section id="harmony-section">
+        <div id="harmony-dictionary">
+          <h1 id="word">Harmony</h1>
+          <p id="pronunciation">/ˈhɑːməni/ <strong>noun</strong></p>
+          <p id="definition">
+            the combination of simultaneously sounded musical notes to produce a pleasing effect.</br>
+            <strong>(press the musical notes below with your sound on!)</strong>
+          </p>
+        </div>
+
+        <div id="music-bar">
+          <button class="play-button" id="lower-C"></button>
+          <button class="play-button" id="D" onclick="playD()"></button>
+          <audio id="play-D" src="./scale/D.mp3"></audio>
+          <button class="play-button" id="E" onclick="playE()"></button>
+          <audio id="play-E" src="./scale/E.mp3"></audio>
+          <button class="play-button" id="F" onclick="playF()"></button>
+          <audio id="play-F" src="./scale/F.mp3"></audio>
+          <button class="play-button" id="G" onclick="playG()"></button>
+          <audio id="play-G" src="./scale/G.mp3"></audio>
+          <button class="play-button" id="A" onclick="playA()"></button>
+          <audio id="play-A" src="./scale/A.mp3"></audio>
+          <button class="play-button" id="B" onclick="playB()"></button>
+          <audio id="play-B" src="./scale/B.mp3"></audio>
+          <button class="play-button" id="C" onclick="playC()"></button>
+          <audio id="play-C" src="./scale/C.mp3"></audio>
+        </div>  
+      </section>
+
+      <div class="padding-for-nav-links" id="about-me-link"></div>
+      <section id="about-me">
+        <h2 id="about-me-title">About Yours Truly</h2>
+        <div id="about-me-text-picture">
+          <div id="about-me-picture">picture</div>
+          I love dogs. Hover over the painting to see mine!</br></br>
+          What else do I love? Music! I love classical piano, hence my interpretation of the given theme 'Harmony'.</br></br>
+          I'm currently a second year, first semester comp sci student. 
+          Why did I choose comp sci? Obviously because of the flourishing and very promising job market. Especially right now.</br></br>
+          In all seriousness, comp sci has always fascinated me and I do hope that I'll survive it. 
+          Meanwhile, I attached 4 of my favorite piano pieces below to better illustrate how truly beautiful and heavenly harmonies can sound.
+        </div>
+        </section>
+
+      <div class="padding-for-nav-links" id="favorite-pieces-link"></div>
+      <section id="favorite-pieces">
+        <h2 id="favorite-piano-pieces-title">Best Ever Piano Pieces</h2>
+        <div id="piano-pieces">
+          <div class="individual-piano-pieces" id="debussy">
+            <video class="all-video" id="debussy-video" src="./piano-playing/clair-de-lune.mp4"></video>
+            <a href="https://youtu.be/c977QdbTImU?si=holXvj2u9nc3-5rv" target=”_blank”>Clair de Lune</a>
+          </div>
+          <div class="individual-piano-pieces" id="liszt">
+            <video class="all-video" id="liszt-video" src="./piano-playing/liebestraum.mp4"></video>
+            <a href="https://youtu.be/bhYfOh6dn3o?si=lHUH6daDBc_ACT3j" target=”_blank”>Liebestraum</a>
+          </div>
+          <div class="individual-piano-pieces" id="chopin">
+            <video class="all-video" id="chopin-video" src="./piano-playing/nocturne.mp4"></video>
+            <a href="https://youtu.be/nPErSyk5iHs?si=pngx50kUt_9krSf-" target=”_blank”>Nocturne Op. 27</a>
+          </div>
+          <div class="individual-piano-pieces" id="ravel">
+            <video class="all-video" id="ravel-video" src="./piano-playing/jeux-deau.mp4"></video>
+            <a href="https://youtu.be/J_36x1_LKgg?si=DsNr_883f6QOERp7" target=”_blank”>Jeux D'Eau</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="personal-links">
+        <div class="footer-links" id="linkedin"><a href="https://www.linkedin.com/in/jesslyn-wu-0abb4428b" target=”_blank”>LinkedIn</a></div>
+        <div class="footer-links" id="instagram"><a href="https://www.instagram.com/jes_lyn36/" target=”_blank”>Instagram</a></div>
+        <div class="footer-links" id="spotify"><a href="https://open.spotify.com/user/jesslynwu821" target=”_blank”>Spotify</a></div>
+        <div class="footer-links" id="tinder"><a href="https://youtu.be/xvFZjo5PgG0?si=7JKC2bx9RLPiVF5v" target=”_blank”>Tinder</a></div>
+      </section>
+    </footer>
+
+    <script>
+      var lower_C_hover = document.getElementById("lower-C");
+
+      document.getElementById("D").addEventListener("mouseover", function() {
+        lower_C_hover.style.opacity = "90%"; // Change to your desired color
+      });
+
+      document.getElementById("D").addEventListener("mouseout", function() {
+        lower_C_hover.style.opacity = "40%"; // Reset to original color
+      });
+
+      document.getElementById("E").addEventListener("mouseover", function() {
+        lower_C_hover.style.opacity = "90%"; // Change to your desired color
+      });
+
+      document.getElementById("E").addEventListener("mouseout", function() {
+        lower_C_hover.style.opacity = "40%"; // Reset to original color
+      });
+
+      document.getElementById("F").addEventListener("mouseover", function() {
+        lower_C_hover.style.opacity = "90%"; // Change to your desired color
+      });
+
+      document.getElementById("F").addEventListener("mouseout", function() {
+        lower_C_hover.style.opacity = "40%"; // Reset to original color
+      });
+
+      document.getElementById("G").addEventListener("mouseover", function() {
+        lower_C_hover.style.opacity = "90%"; // Change to your desired color
+      });
+
+      document.getElementById("G").addEventListener("mouseout", function() {
+        lower_C_hover.style.opacity = "40%"; // Reset to original color
+      });
+
+      document.getElementById("A").addEventListener("mouseover", function() {
+        lower_C_hover.style.opacity = "90%"; // Change to your desired color
+      });
+
+      document.getElementById("A").addEventListener("mouseout", function() {
+        lower_C_hover.style.opacity = "40%"; // Reset to original color
+      });
+
+      document.getElementById("B").addEventListener("mouseover", function() {
+        lower_C_hover.style.opacity = "90%"; // Change to your desired color
+      });
+
+      document.getElementById("B").addEventListener("mouseout", function() {
+        lower_C_hover.style.opacity = "40%"; // Reset to original color
+      });
+
+      document.getElementById("C").addEventListener("mouseover", function() {
+        lower_C_hover.style.opacity = "90%"; // Change to your desired color
+      });
+
+      document.getElementById("C").addEventListener("mouseout", function() {
+        lower_C_hover.style.opacity = "40%"; // Reset to original color
+      });
+
+      function playD() {
+        var sound = document.getElementById("play-D");
+        sound.currentTime = 0;
+        sound.play();
+      }
+      function playE() {
+        var sound = document.getElementById("play-E");
+        sound.currentTime = 0;
+        sound.play();
+      }
+      function playF() {
+        var sound = document.getElementById("play-F");
+        sound.currentTime = 0;
+        sound.play();
+      }
+      function playG() {
+        var sound = document.getElementById("play-G");
+        sound.currentTime = 0;
+        sound.play();
+      }
+      function playA() {
+        var sound = document.getElementById("play-A");
+        sound.currentTime = 0;
+        sound.play();
+      }
+      function playB() {
+        var sound = document.getElementById("play-B");
+        sound.currentTime = 0;
+        sound.play();
+      }
+      function playC() {
+        var sound = document.getElementById("play-C");
+        sound.currentTime = 0;
+        sound.play();
+      }
+
+      document.getElementById("debussy").addEventListener("mouseover", () => {
+        var video = document.getElementById("debussy-video");
+        video.play();
+        video.loop = true;
+      });
+      document.getElementById("debussy").addEventListener("mouseout", () => {
+        var video = document.getElementById("debussy-video");
+        video.pause();
+        video.currentTime = 0; // Reset to the beginning when the mouse leaves
+      });
+
+      document.getElementById("liszt").addEventListener("mouseover", () => {
+        var video = document.getElementById("liszt-video");
+        video.play();
+        video.loop = true;
+      });
+      document.getElementById("liszt").addEventListener("mouseout", () => {
+        var video = document.getElementById("liszt-video");
+        video.pause();
+        video.currentTime = 0; // Reset to the beginning when the mouse leaves
+      });
+
+      document.getElementById("chopin").addEventListener("mouseover", () => {
+        var video = document.getElementById("chopin-video");
+        video.play();
+        video.loop = true;
+      });
+      document.getElementById("chopin").addEventListener("mouseout", () => {
+        var video = document.getElementById("chopin-video");
+        video.pause();
+        video.currentTime = 0; // Reset to the beginning when the mouse leaves
+      });
+
+      document.getElementById("ravel").addEventListener("mouseover", () => {
+        var video = document.getElementById("ravel-video");
+        video.play();
+        video.loop = true;
+      });
+      document.getElementById("ravel").addEventListener("mouseout", () => {
+        var video = document.getElementById("ravel-video");
+        video.pause();
+        video.currentTime = 0; // Reset to the beginning when the mouse leaves
+      });
+    </script>
+  </body>
+</html>

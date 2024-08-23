@@ -1,0 +1,518 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  color: black;
+  text-decoration: solid;
+}
+
+body {
+  background-image: url('./other-pics/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #8b9fbe;
+  background-position: center;
+
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.padding-for-nav-links {
+  padding-top: 27px;
+}
+
+#about-me-link {
+  padding-top: 52px;
+}
+
+/* ////////// navigation bar ////////// */
+#navigation-links {
+  display: flex;
+  background-color: #8b9fbe;
+  justify-content: space-around;  /* Distributes items evenly */
+
+  padding-top:11px;
+  padding-bottom: 11px;
+  position: fixed;
+  
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 1000;
+}
+
+.page-links a {
+  color: white;
+}
+
+.page-links a:hover {
+  text-decoration: underline;
+}
+/* //////////////////////////////////// */
+
+/* ////////// title ////////// */
+#title {
+  display: flex;
+  justify-content: center;
+}
+
+#title-picture {
+  padding-top: 52px;
+
+  width: 60%;
+  max-width: 700px;
+  min-width: 400px;
+
+  margin-top: 15px;
+}
+/* //////////////////////////// */
+
+/* ////////// main page ////////// */
+#harmony-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+#word {
+  font-size: clamp(25px, 3.5vw, 32px);
+  margin-bottom: 5px;
+}
+
+#pronunciation {
+  font-size: clamp(15px, 2vw, 23px);
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+#definition {
+  font-size: clamp(15px, 2vw, 23px);
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+#music-bar {
+  background-image: url("./other-pics/piano-notes.PNG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 600px;
+  height: 300px;
+}
+
+.play-button {
+  width: 32px;
+  height: 28px;
+  border-radius: 40% 70%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#lower-C {
+  position: absolute;
+  margin-top: 240px;
+  margin-left: 273px;
+
+  border: 0;
+  opacity: 40%;
+}
+
+#D {
+  position: absolute;
+  margin-top: 222px;
+  margin-left: 323px;
+
+  border: 0;
+  opacity: 40%;
+}
+
+#D:hover, #D:active {
+  opacity: 90%;
+}
+
+#E {
+  position: absolute;
+  margin-top: 205px;
+  margin-left: 271px;
+
+  border: 0;
+  opacity: 40%;
+}
+
+#E:hover, #E:active {
+  opacity: 90%;
+}
+
+#F {
+  position: absolute;
+  margin-top: 188px;
+  margin-left: 322px;
+
+  border: 0;
+  opacity: 40%;
+}
+
+#F:hover, #F:active {
+  opacity: 90%;
+}
+
+#G {
+  position: absolute;
+  margin-top: 172px;
+  margin-left: 271px;
+
+  border: 0;
+  opacity: 40%;
+}
+
+#G:hover, #G:active {
+  opacity: 90%;
+}
+
+#A {
+  position: absolute;
+  margin-top: 155px;
+  margin-left: 323px;
+
+  border: 0;
+  opacity: 40%;
+}
+
+#A:hover, #A:active {
+  opacity: 90%;
+}
+
+#B {
+  position: absolute;
+  margin-top: 137px;
+  margin-left: 271px;
+
+  border: 0;
+  opacity: 40%;
+}
+
+#B:hover, #B:active {
+  opacity: 90%;
+}
+
+#C {
+  position: absolute;
+  margin-top: 122px;
+  margin-left: 325px;
+
+  border: 0;
+  opacity: 40%;
+}
+
+#C:hover, #C:active {
+  opacity: 90%;
+}
+/* /////////////////////////////// */
+
+/* ////////// smaller main page ////////// */
+@media only screen and (max-width: 680px) {
+  #harmony-dictionary {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  /* #word {
+    font-size: clamp(28px, 3vw, 32px);
+    margin-bottom: 5px;
+  }
+  
+  #pronunciation {
+    font-size: clamp(18px, 2vw, 23px);
+    margin: 0;
+    margin-bottom: 2px;
+  }
+  
+  #definition {
+    font-size: clamp(18px, 2vw, 23px);
+    margin: 0;
+    margin-bottom: 15px;
+  } */
+
+  #music-bar {
+    background-image: url("./other-pics/piano-notes.PNG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+  
+    width: 430px;
+    height: 220px;
+  }
+
+  .play-button {
+    width: 25px;
+    height: 20px;
+    border-radius: 40% 70%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  #lower-C {
+    position: absolute;
+    margin-top: 176px;
+    margin-left: 195px;
+  
+    border: 0;
+    opacity: 40%;
+  }
+  
+  #D {
+    position: absolute;
+    margin-top: 163px;
+    margin-left: 231px;
+  
+    border: 0;
+    opacity: 40%;
+  }
+
+  #E {
+    position: absolute;
+    margin-top: 151px;
+    margin-left: 193px;
+  
+    border: 0;
+    opacity: 40%;
+  }
+
+  #F {
+    position: absolute;
+    margin-top: 138px;
+    margin-left: 230px;
+  
+    border: 0;
+    opacity: 40%;
+  }
+
+  #G {
+    position: absolute;
+    margin-top: 126px;
+    margin-left: 193px;
+  
+    border: 0;
+    opacity: 40%;
+  }
+
+  #A {
+    position: absolute;
+    margin-top: 114px;
+    margin-left: 231px;
+  
+    border: 0;
+    opacity: 40%;
+  }
+
+  #B {
+    position: absolute;
+    margin-top: 101px;
+    margin-left: 193px;
+  
+    border: 0;
+    opacity: 40%;
+  }
+
+  #C {
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 232px;
+  
+    border: 0;
+    opacity: 40%;
+  }
+}
+/* /////////////////////////////////////// */
+
+/* ////////// about me ////////// */
+#about-me {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 15%;
+  padding-bottom: 30px;
+  text-align: center;
+  width: 80%;
+  max-width: 850px;
+  min-width: 450px;
+
+  flex-direction: column;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+#about-me-title {
+  font-size: clamp(30px, 5vw, 45px);
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#about-me-text-picture {
+  overflow: hidden; /* Clear floats */
+  text-align: justify;
+  line-height: 20px;
+  font-size: clamp(16px, 2.2vw, 20px);
+
+  width: 80%;
+}
+
+#about-me-picture {
+  float: left; /* or right */
+  background-image: url("./other-pics/dog-painting.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2%;
+  color: rgba(0, 0, 0, 0);
+
+  margin-right: 15px; /* Space between image and text */
+  margin-bottom: 15px; /* Space below the image */
+
+  width: 200px;
+  height: 180px
+}
+
+#about-me-picture:hover {
+  background-image: url("./other-pics/dog-picture.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: 0.15s ease-in-out;
+}
+/* ////////////////////////////// */
+
+/* ////////// piano pieces ////////// */
+#favorite-pieces {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 15%;
+  padding-bottom: 30px;
+  text-align: center;
+  width: 80%;
+  max-width: 850px;
+  min-width: 450px;
+
+  flex-direction: column;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+#favorite-piano-pieces-title {
+  font-size: clamp(30px, 5vw, 45px);
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#piano-pieces {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  width: 80%;
+}
+
+#piano-pieces a {
+  position: absolute;
+  color: white;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 30%;
+  min-width: 125px;
+}
+
+#piano-pieces a:hover {
+  text-decoration: underline;
+}
+
+.individual-piano-pieces {
+  position: relative;
+  padding: 35% 35%;
+  margin: 10px;
+  border-radius: 2%;
+}
+
+.all-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0; 
+  transition: opacity 0.2s linear;
+  border-radius: 2%;
+}
+
+.individual-piano-pieces:hover .all-video {
+  opacity: 1;
+  visibility: visible;
+}
+
+#debussy {
+  background-image: url('./composer/debussy.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+#liszt {
+  background-image: url('./composer/liszt.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+#chopin {
+  background-image: url('./composer/chopin.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+#ravel {
+  background-image: url('./composer/ravel.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+/* ////////////////////////////////// */
+
+/* ////////// links ////////// */
+/* /////////////////////////// */
+
+/* ////////// footer links ////////// */
+#personal-links {
+  display: flex;
+  background-color: #8b9fbe;
+  justify-content: left;  /* Distributes items evenly */
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.footer-links {
+  margin-left: 5%;
+}
+
+.footer-links a {
+  color: white;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+/* ////////////////////////////////// */
