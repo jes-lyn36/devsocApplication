@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title> DeVSoc Application </title>
+    <link rel="stylesheet" href="./discord-style.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <section id="navigation-links">
+          <div class="page-links"><a href="#title">Main Page</a></div>
+          <div class="page-links"><a href="#discord-dictionary-link">Discord</a></div>
+          <div class="page-links"><a href="#about-me-link">About Me</a></div>
+          <div class="page-links"><a href="#favorite-pieces-link">Piano Pieces</a></div>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+      <section id="title">
+        <img id="title-picture" src="./other-pics/discord-title.png">
+      </section>
+
+      <div id="to-harmony">
+        <a href="./index.html">Harmony</a>
+      </div>
+
+      <div class="padding-for-nav-links" id="discord-dictionary-link"></div>
+      <section id="discord-section">
+        <div id="discord-dictionary">
+          <h1 id="word">Discord</h1>
+          <p id="pronunciation">/ˈdɪskɔːd/ <strong>noun</strong></p>
+          <p id="definition">
+            the combination of musical sounds that lacks harmony or presents a musical dissonance.</br>
+            <strong>(press the musical notes below with your sound on!)</strong>
+          </p>
+        </div>
+
+        <div id="music-bar">
+          <button class="play-button" id="lower-C"></button>
+          <button class="play-button" id="D" onclick="playD()"></button>
+          <audio id="play-D" src="./flat-scale/D-flat.mp3"></audio>
+          <button class="play-button" id="E" onclick="playE()"></button>
+          <audio id="play-E" src="./flat-scale/E-flat.mp3"></audio>
+          <button class="play-button" id="G" onclick="playG()"></button>
+          <audio id="play-G" src="./flat-scale/G-flat.mp3"></audio>
+          <button class="play-button" id="A" onclick="playA()"></button>
+          <audio id="play-A" src="./flat-scale/A-flat.mp3"></audio>
+          <button class="play-button" id="B" onclick="playB()"></button>
+          <audio id="play-B" src="./flat-scale/B-flat.mp3"></audio>
+        </div>  
+      </section>
+
+      <div class="padding-for-nav-links" id="about-me-link"></div>
+      <section id="about-me">
+        <h2 id="about-me-title">About Yours Truly</h2>
+        <div id="about-me-text-picture">
+          <div id="about-me-picture">picture</div>
+          I love dogs. Hover over the painting to see mine!</br></br>
+          What else do I love? Music! I love classical piano, hence my interpretation of the given theme 'Harmony'.</br></br>
+          I'm currently a second year, first semester comp sci student. 
+          Why did I choose comp sci? Obviously because of the flourishing and very promising job market. Especially right now.</br></br>
+          In all seriousness, comp sci has always fascinated me and I do hope that I'll survive it. 
+          Meanwhile, I attached 4 of my favorite piano pieces below to better illustrate how truly beautiful and heavenly harmonies can sound.
+        </div>
+        </section>
+
+      <div class="padding-for-nav-links" id="favorite-pieces-link"></div>
+      <section id="favorite-pieces">
+        <h2 id="favorite-piano-pieces-title">Oh No It's A Pian-ic Attack!</h2>
+        <div id="piano-pieces">
+          <div class="individual-piano-pieces" id="grieg">
+            <video class="all-video" id="grieg-video" src="./discord-piano-playing/hall-of-the-mountain-king.mp4"></video>
+            <a href="https://youtu.be/0nZhw3wifeY?si=4kWrp1v47tDrwt3x" target=”_blank”>Hall of the Mountain King</a>
+          </div>
+          <div class="individual-piano-pieces" id="saens">
+            <video class="all-video" id="saens-video" src="./discord-piano-playing/danse-macabre.mp4"></video>
+            <a href="https://youtu.be/LJZjPes-vrA?si=S_SoVypUSq9W--oY" target=”_blank”>Danse Macabre</a>
+          </div>
+          <div class="individual-piano-pieces" id="chopin">
+            <video class="all-video" id="chopin-video" src="./discord-piano-playing/revolutionary.mp4"></video>
+            <a href="https://youtu.be/Y6RIwVi1Mjs?si=KnzzDKGqSGFMfdcy" target=”_blank”>Revolutionary Etude</a>
+          </div>
+          <div class="individual-piano-pieces" id="wagner">
+            <video class="all-video" id="wagner-video" src="./discord-piano-playing/ride-of-the-valkyries.mp4"></video>
+            <a href="https://youtu.be/eS7xXDy6plU?si=PML2XzwHxITz2Nda" target=”_blank”>Ride of the Valkyries</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="personal-links">
+        <div class="footer-links" id="linkedin"><a href="https://www.linkedin.com/in/jesslyn-wu-0abb4428b" target=”_blank”>LinkedIn</a></div>
+        <div class="footer-links" id="instagram"><a href="https://www.instagram.com/jes_lyn36/" target=”_blank”>Instagram</a></div>
+        <div class="footer-links" id="spotify"><a href="https://open.spotify.com/user/jesslynwu821" target=”_blank”>Spotify</a></div>
+        <div class="footer-links" id="tinder"><a href="https://youtu.be/xvFZjo5PgG0?si=7JKC2bx9RLPiVF5v" target=”_blank”>Tinder</a></div>
+      </section>
+    </footer>
+
+    <script>
+      var lower_C_hover = document.getElementById("lower-C");
+
+      document.getElementById("D").addEventListener("mouseover", function() {
+        lower_C_hover.style.opacity = "90%"; // Change to your desired color
+      });
+
+      document.getElementById("D").addEventListener("mouseout", function() {
+        lower_C_hover.style.opacity = "40%"; // Reset to original color
+      });
+
+      document.getElementById("E").addEventListener("mouseover", function() {
+        lower_C_hover.style.opacity = "90%"; // Change to your desired color
+      });
+
+      document.getElementById("E").addEventListener("mouseout", function() {
+        lower_C_hover.style.opacity = "40%"; // Reset to original color
+      });
+
+      document.getElementById("G").addEventListener("mouseover", function() {
+        lower_C_hover.style.opacity = "90%"; // Change to your desired color
+      });
+
+      document.getElementById("G").addEventListener("mouseout", function() {
+        lower_C_hover.style.opacity = "40%"; // Reset to original color
+      });
+
+      document.getElementById("A").addEventListener("mouseover", function() {
+        lower_C_hover.style.opacity = "90%"; // Change to your desired color
+      });
+
+      document.getElementById("A").addEventListener("mouseout", function() {
+        lower_C_hover.style.opacity = "40%"; // Reset to original color
+      });
+
+      document.getElementById("B").addEventListener("mouseover", function() {
+        lower_C_hover.style.opacity = "90%"; // Change to your desired color
+      });
+
+      document.getElementById("B").addEventListener("mouseout", function() {
+        lower_C_hover.style.opacity = "40%"; // Reset to original color
+      });
+
+      function playD() {
+        var sound = document.getElementById("play-D");
+        sound.currentTime = 0;
+        sound.play();
+      }
+      function playE() {
+        var sound = document.getElementById("play-E");
+        sound.currentTime = 0;
+        sound.play();
+      }
+      function playG() {
+        var sound = document.getElementById("play-G");
+        sound.currentTime = 0;
+        sound.play();
+      }
+      function playA() {
+        var sound = document.getElementById("play-A");
+        sound.currentTime = 0;
+        sound.play();
+      }
+      function playB() {
+        var sound = document.getElementById("play-B");
+        sound.currentTime = 0;
+        sound.play();
+      }
+
+      document.getElementById("grieg").addEventListener("mouseover", () => {
+        var video = document.getElementById("grieg-video");
+        video.play();
+        video.loop = true;
+      });
+      document.getElementById("grieg").addEventListener("mouseout", () => {
+        var video = document.getElementById("grieg-video");
+        video.pause();
+        video.currentTime = 0; // Reset to the beginning when the mouse leaves
+      });
+
+      document.getElementById("saens").addEventListener("mouseover", () => {
+        var video = document.getElementById("saens-video");
+        video.play();
+        video.loop = true;
+      });
+      document.getElementById("saens").addEventListener("mouseout", () => {
+        var video = document.getElementById("saens-video");
+        video.pause();
+        video.currentTime = 0; // Reset to the beginning when the mouse leaves
+      });
+
+      document.getElementById("chopin").addEventListener("mouseover", () => {
+        var video = document.getElementById("chopin-video");
+        video.play();
+        video.loop = true;
+      });
+      document.getElementById("chopin").addEventListener("mouseout", () => {
+        var video = document.getElementById("chopin-video");
+        video.pause();
+        video.currentTime = 0; // Reset to the beginning when the mouse leaves
+      });
+
+      document.getElementById("wagner").addEventListener("mouseover", () => {
+        var video = document.getElementById("wagner-video");
+        video.play();
+        video.loop = true;
+      });
+      document.getElementById("wagner").addEventListener("mouseout", () => {
+        var video = document.getElementById("wagner-video");
+        video.pause();
+        video.currentTime = 0; // Reset to the beginning when the mouse leaves
+      });
+    </script>
+  </body>
+</html>
