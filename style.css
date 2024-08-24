@@ -49,6 +49,16 @@ body {
 .page-links a:hover {
   text-decoration: underline;
 }
+
+#discord a {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#discord a:hover {
+  color: #2f2d29;
+  text-decoration: underline;
+}
 /* //////////////////////////////////// */
 
 /* ////////// title ////////// */
