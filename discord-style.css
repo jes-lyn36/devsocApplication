@@ -50,6 +50,10 @@ body {
   text-decoration: underline;
 }
 
+#about-me-nav a {
+  font-family: "Redacted Script", cursive;
+}
+
 #harmony a {
   font-weight: bold;
   font-style: italic;
@@ -59,6 +63,8 @@ body {
   color: #8b9fbe;
   text-decoration: underline;
 }
+
+
 /* //////////////////////////////////// */
 
 /* ////////// title ////////// */
@@ -322,6 +328,7 @@ body {
 
 #about-me-title {
   font-size: clamp(30px, 5vw, 45px);
+  font-family: "Redacted Script", cursive;
   margin-top: 15px;
   margin-bottom: 20px;
   color: rgb(219, 213, 200);
@@ -331,7 +338,8 @@ body {
   overflow: hidden; /* Clear floats */
   text-align: justify;
   line-height: 20px;
-  font-size: clamp(16px, 2.2vw, 20px);
+  font-size: clamp(20px, 2.2vw, 20px);
+  font-family: "Redacted Script", cursive;
 
   width: 80%;
   color: rgb(219, 213, 200);
@@ -339,7 +347,8 @@ body {
 
 #about-me-picture {
   float: left; /* or right */
-  background-image: url("./other-pics/dog-painting.png");
+  background-image: url("./other-pics/discord-dog-painting.png");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 2%;
@@ -352,12 +361,6 @@ body {
   height: 180px
 }
 
-#about-me-picture:hover {
-  background-image: url("./other-pics/dog-picture.jpg");
-  background-position: center;
-  background-size: cover;
-  transition: 0.15s ease-in-out;
-}
 /* ////////////////////////////// */
 
 /* ////////// piano pieces ////////// */
