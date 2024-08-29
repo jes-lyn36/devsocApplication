@@ -101,6 +101,22 @@
     </footer>
 
     <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const bodyElement = document.body;
+
+        setTimeout(() => {
+          bodyElement.style.backgroundImage = 'url(./other-pics/discord-background.png)';
+        }, 1000);
+
+        setInterval(() => {
+          bodyElement.style.backgroundImage = 'url(./other-pics/discord-thunder-background.png)';
+
+          setTimeout(() => {
+            bodyElement.style.backgroundImage = 'url(./other-pics/discord-background.png)';
+          }, 1500);
+        }, 6000);
+      });
+
       var lower_C_hover = document.getElementById("lower-C");
 
       document.getElementById("D").addEventListener("mouseover", function() {
